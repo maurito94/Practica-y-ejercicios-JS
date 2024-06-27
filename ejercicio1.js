@@ -74,16 +74,49 @@ if (operacion === 'suma'){
     
 }*/
 
-// EJERCICIO NUMERO 4
+// EJERCICIO Nº4
 
-let sumaPrecios = 0
-while (sumaPrecios !==0){
-    let precioProducto = parseFloat(prompt('Ingrese el precio del producto (0 para terminar)'))
-    sumaPrecios += precioProducto
+/*function calcularTotalAPagar(totalCompra) {
+    let descuento = 0;
+    if (totalCompra > 1000) {
+        descuento = totalCompra * 0.15;
+    }
+    let totalAPagar = totalCompra - descuento;
+    return totalAPagar;
 }
-if (sumaPrecios >1000){
-    let descuento = sumaPrecios * 0.85
-    console.log ('Su precio total de la compra es:', sumaPrecios, 'el descuento del 15% es', descuento)
-}else {
-    console.log ('Su compra es de:', sumaPrecios, 'su compra es menor a mil y no aplica a ningun descuento')
+
+const totalCompra = parseFloat(prompt("Ingrese el total de la compra en pesos: "));
+const totalAPagar = calcularTotalAPagar(totalCompra);
+console.log(`Total a pagar: $${totalAPagar.toFixed(2)}`); */
+
+//EJERCICIO Nº5
+//Escribe un programa que pida la edad de una persona y clasifique su etapa de vida: "Niño" (0-12 años),
+// "Adolescente" (13-17 años), "Adulto" (18-64 años) o "Adulto mayor" (65 años en adelante).
+
+//*ME ESTOY APOYANDO CON CHAT GPT */
+
+function clasificarEtapaDeVida(edad) {
+    if (edad >= 0 && edad <= 12) {
+        return "Niño";
+    } else if (edad >= 13 && edad <= 17) {
+        return "Adolescente";
+    } else if (edad >= 18 && edad <= 64) {
+        return "Adulto";
+    } else if (edad >= 65) {
+        return "Adulto mayor";
+    } else {
+        return "Edad ingresada no válida";
+    }
+}
+
+// Solicitar la edad al usuario
+const edadStr = prompt("Ingrese su edad:");
+const edad = parseInt(edadStr);
+
+// Clasificar la etapa de vida y mostrar en consola
+if (!isNaN(edad)) {
+    const etapaDeVida = clasificarEtapaDeVida(edad);
+    console.log(`Usted es ${etapaDeVida}.`);
+} else {
+    console.log("Por favor ingrese un número válido para la edad.");
 }
