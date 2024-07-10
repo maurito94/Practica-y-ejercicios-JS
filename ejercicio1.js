@@ -110,8 +110,8 @@ function clasificarEtapaDeVida(edad) {
 }
 
 // Solicitar la edad al usuario
-const edadStr = prompt("Ingrese su edad:");
-const edad = parseInt(edadStr);
+const edad = parseInt (prompt("Ingrese su edad:"))
+
 
 // Clasificar la etapa de vida y mostrar en consola
 if (!isNaN(edad)) {
