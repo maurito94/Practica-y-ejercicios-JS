@@ -3,7 +3,7 @@
 let apellido = prompt('Por favor, ingresa tu apellido')
 
 alert('Hola ' + nombre + ' ' + apellido) 
-alert(typeof nombre)/*
+alert(typeof nombre) *=)*/
 
 /* ejercicio nº2*/
 /*let frase = prompt ('Ingrese una frase')
@@ -95,7 +95,7 @@ console.log(`Total a pagar: $${totalAPagar.toFixed(2)}`); */
 
 //*ME ESTOY APOYANDO CON CHAT GPT */
 
-function clasificarEtapaDeVida(edad) {
+/*function clasificarEtapaDeVida(edad) {
     if (edad >= 0 && edad <= 12) {
         return "Niño";
     } else if (edad >= 13 && edad <= 17) {
@@ -119,4 +119,33 @@ if (!isNaN(edad)) {
     console.log(`Usted es ${etapaDeVida}.`);
 } else {
     console.log("Por favor ingrese un número válido para la edad.");
+} */
+    /*Evaluador de temperatura:
+    Crea un programa que, dada una temperatura en grados Celsius, indique si hace mucho calor (más de 30 grados),
+    calor (entre 20 y 30 grados), fresco (entre 10 y 20 grados) o frío (menos de 10 grados)*/
+
+    function clasificarTemperatura(grados) {
+    if (grados >= 0 && grados <= 10) {
+        return "Frio";
+    } else if (grados >= 10 && grados <= 20) {
+        return "Fresco";
+    } else if (grados >= 20 && grados <= 30) {
+        return "Calor";
+    } else if (edad >= 30) {
+        return "Mucho caalor culiao";
+    } else {
+        return "Temperatura ingresada no válida";
+    }
+}
+
+// Solicitar la edad al usuario
+const grados = parseInt (prompt("Indique la temperatura:"))
+
+
+// Clasificar la etapa de vida y mostrar en consola
+if (!isNaN(grados)) {
+    const Temperatura = clasificarTemperatura(grados);
+    console.log(`Hace ${Temperatura}.`);
+} else {
+    console.log("Por favor ingrese un número válido para medir la temperatura.");
 }
