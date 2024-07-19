@@ -120,18 +120,19 @@ if (!isNaN(edad)) {
 } else {
     console.log("Por favor ingrese un número válido para la edad.");
 } */
+//EJERCICIO N6
     /*Evaluador de temperatura:
     Crea un programa que, dada una temperatura en grados Celsius, indique si hace mucho calor (más de 30 grados),
     calor (entre 20 y 30 grados), fresco (entre 10 y 20 grados) o frío (menos de 10 grados)*/
 
-    function clasificarTemperatura(grados) {
+    /*function clasificarTemperatura(grados) {
     if (grados >= 0 && grados <= 10) {
         return "Frio";
     } else if (grados >= 10 && grados <= 20) {
         return "Fresco";
     } else if (grados >= 20 && grados <= 30) {
         return "Calor";
-    } else if (edad >= 30) {
+    } else if (grados >= 30) {
         return "Mucho caalor culiao";
     } else {
         return "Temperatura ingresada no válida";
@@ -148,4 +149,64 @@ if (!isNaN(grados)) {
     console.log(`Hace ${Temperatura}.`);
 } else {
     console.log("Por favor ingrese un número válido para medir la temperatura.");
+}*/
+
+/*const clasificarTemperatura = (grados)=> {
+    if (grados <= 0 || grados >=0 && grados <= 10) {
+        return "Frio";
+    } else if (grados >= 10 && grados <= 20) {
+        return "Fresco";
+    } else if (grados >= 20 && grados <= 30) {
+        return "Calor";
+    } else if (grados >= 30) {
+        return "Mucho caalor culiao";
+    } else {
+        return "Temperatura ingresada no válida";
+    }
+} 
+const grados = parseInt (prompt("Indique la temperatura"))
+const temperatura = clasificarTemperatura (grados)
+console.log(`Hace ${temperatura}`)*/
+
+/* Validador de acceso:
+Escribe un script que pida un nombre de usuario y contraseña. 
+Si el nombre es "usuario1" y la contraseña es "123456",
+ muestra "Acceso concedido". De lo contrario, muestra "Acceso denegado".*/
+
+ /*const nombreUsuario = "mauro94"
+ //console.log(typeof nombreUsuario)
+ const contrasena = "123456"
+ console.log(typeof contrasena)
+ const usuarioIngresado = (prompt("Ingrese su usuario"))
+
+ const contrasenaIngresada = (prompt("Ingrese su contraseña"))
+ console.log(typeof contrasenaIngresada)
+
+ if (nombreUsuario == usuarioIngresado && contrasena == contrasenaIngresada){
+    const resultado = console.log("Acceso concedido")
+ }
+ else {
+    console.log("Acceso denegado")
+}*/
+/*const usuarioIngresado = (prompt("Ingrese su usuario"))
+const contrasenaIngresada = (prompt("Ingrese su contraseña"))
+
+function registrarUsuario (usuario, contrasena){
+    if (usuario == "mauro94" && contrasena == "123456"){
+       return "Acceso concedido"
+     }
+     else {
+        return "Acceso denegado"}
 }
+let  resultado = registrarUsuario (usuarioIngresado, contrasenaIngresada)
+console.log(resultado)*/
+
+//practica
+let persona = {
+    nombre: "Carlos",
+    edad: "30"
+}
+//console.log(Object.keys(persona));//devuelve un array con las claves ("nombre, edad")
+//console.log(Object.values(persona));//devuelve un array con las propiedades enumerables de los obejetos ("Carlos, 30")
+console.log(Object.entries(persona)); 
+
